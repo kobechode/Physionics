@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class>
+
+    <header class="header py-5">
+ 
+        <div class="container">
+    
+      <div class="header__wrapper flex items-center justify-between">
+        <div class="headerLogo">
+            <h2 class="text-secondary font-bold text-[2rem]">Physionics</h2>
+     
+
+       </div>
+
+       <div class="headerNav hidden md:block">
+
+          <ul class="flex gap-5">
+
+        <li><a href="">Home</a></li>
+        <li><a href="">Product</a></li>
+        <li><a href="">Pricing</a></li>
+        <li><a href="">Contact</a></li>
+
+
+
+
+          </ul>
+
+
+
+
+
+       </div>
+
+       <div class="getAquote hidden md:block">
+
+         <a class="bg-primary p-3 rounded-md text-white font-semibold" href="">Get a Quote now</a>
+
+
+       </div>
+
+       <div class="flex gap-6 md:hidden">
+        <div class="searchAndcart flex gap-6  ">
+
+            <i class="fa-solid fa-magnifying-glass text-2xl text-darkGray"></i>
+            <i class="fa-solid fa-cart-shopping text-2xl text-darkGray"></i>
+    
+    
+           </div>
+    
+           <div class="toggleMenu  ">
+             
+             <span></span>
+             <span></span>
+             <span></span>
+    
+           </div>
+       </div>
+
+  
+
+      </div>
+
+      <div class="headerMobileNav  transition-all duration-500">
+
+        <ul class="text-center text-[1.5rem] text-darkGray font-semibold py-5">
+
+            <li><a class="block p-3" href="">Home</a></li>
+            <li><a class="block p-3" href="">Product</a></li>
+            <li><a class="block p-3" href="">Pricing</a></li>
+            <li><a class="block p-3" href="">Contact</a></li>
+              </ul>
+      </div>
+
+
+
+
+      
+        </div>
+        </header>
+
+
+        <section class="banner   bg-darkGray bg-blend-multiply  bg-cover bg-no-repeat bg-[url('./img/hero-cover.jpg')] py-10 text-center">
+        <div class="container">
+      <div class="banner__wrapper lg:flex">
+
+        <div>
+            <h1 class="text-huge text-white font-semibold mb-6">Meet the Best Hospital</h1>
+            <p class="text-white mb-6 w-[70%] mx-auto">We know how large objects will act, but things on a small scale.</p>
+            <a class="bg-primary px-5 inline-block py-3 rounded-full text-white font-semibold mb-3" href="">Get a quote Now</a> <br>
+            <a class="bg-transparent border border-white px-5 inline-block py-3 rounded-full text-white font-semibold" href="">Learn More</a>
+
+
+        </div>
+
+
+        <div class="bannerform text-left bg-white p-10 rounded-lg w-[350px] mx-auto my-10">
+            <h3 class="text-center">Book Appointment</h3>
+
+           <form action="">
+
+                <div class="inputGroup mb-3">
+
+
+                    <label  for="">Name</label><br>
+                    <input class="p-3 w-full" type="text" placeholder="Fullname">
+                </div>
+
+                <div class="inputGroup mb-3">
+
+
+                    <label  for="">Email</label><br>
+                    <input class="p-3 w-full" type="text" placeholder="example@gmail.com">
+                </div>
+
+                <div class="inputGroup mb-3">
+
+
+                    <label  for="">Department</label><br>
+                    <input class="p-3 w-full" type="text" placeholder="Please Select">
+                </div>
+
+                <div class="inputGroup mb-3">
+
+
+                    <label  for="">Time</label><br>
+                    <input class="p-3 w-full" type="text" placeholder="Please Select">
+                </div>
+
+                <a class="bg-primary px-5 inline-block py-3 rounded-full text-white font-semibold mb-3" href="">Book an appointment</a> <br>
+
+           </form>
+
+        
+        </div>
+
+      </div>
+
+      
+           
+
+           
+                
+        </div>
+
+
+
+        </section>
+
+       
+        <script>
+       const toggleMenu = document.querySelector('.toggleMenu');
+       const headerMobileNav = document.querySelector('.headerMobileNav');
+
+
+       toggleMenu.addEventListener('click',()=>{
+          
+             headerMobileNav.classList.toggle('active');
+
+       })
+
+        </script>
+
+      
+  
+</body>
+</html>
