@@ -842,8 +842,8 @@ body {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\/img\/hero-cover\.jpg\'\)\] {
-  background-image: url('./img/hero-cover.jpg');
+.bg-\[url\(\'\.dist\/img\/hero-cover\.jpg\'\)\] {
+  background-image: url('.dist/img/hero-cover.jpg');
 }
 
 .bg-cover {
