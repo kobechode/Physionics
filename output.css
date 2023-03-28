@@ -842,8 +842,8 @@ body {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.dist\/img\/hero-cover\.jpg\'\)\] {
-  background-image: url('.dist/img/hero-cover.jpg');
+.bg-\[url\(\'https\:\/\/github\.com\/kobechode\/Physionics\/blob\/master\/dist\/img\/hero-cover\.jpg\?raw\=true\'\)\] {
+  background-image: url('https://github.com/kobechode/Physionics/blob/master/dist/img/hero-cover.jpg?raw=true');
 }
 
 .bg-cover {
