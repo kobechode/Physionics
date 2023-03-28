@@ -1,177 +1,723 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Physionics</title>
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
 </head>
+
 <body class>
 
     <header class="header py-5">
- 
         <div class="container">
-    
-      <div class="header__wrapper flex items-center justify-between">
-        <div class="headerLogo">
-            <h2 class="text-secondary font-bold text-[2rem]">Physionics</h2>
-     
+            <div class="header__wrapper flex items-center justify-between">
+                <div class="headerLogo">
+                    <h2 class="text-secondary font-bold text-[2rem]">Physionics</h2>
+                </div>
+                <div class="headerNav hidden md:block">
+                    <ul class="flex gap-5">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Product</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="getAquote hidden md:block">
+                    <a class="bg-primary p-3 rounded-md text-white font-semibold" href="">Get a Quote now</a>
+                </div>
+                <div class="flex gap-6 md:hidden">
+                    <div class="searchAndcart flex gap-6  ">
 
-       </div>
+                        <i class="fa-solid fa-magnifying-glass text-2xl text-darkGray"></i>
+                        <i class="fa-solid fa-cart-shopping text-2xl text-darkGray"></i>
+                    </div>
 
-       <div class="headerNav hidden md:block">
+                    <div class="toggleMenu  ">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="headerMobileNav  transition-all duration-500">
 
-          <ul class="flex gap-5">
+                <ul class="text-center text-[1.5rem] text-darkGray font-semibold py-5">
 
-        <li><a href="">Home</a></li>
-        <li><a href="">Product</a></li>
-        <li><a href="">Pricing</a></li>
-        <li><a href="">Contact</a></li>
-
-
-
-
-          </ul>
-
-
-
-
-
-       </div>
-
-       <div class="getAquote hidden md:block">
-
-         <a class="bg-primary p-3 rounded-md text-white font-semibold" href="">Get a Quote now</a>
-
-
-       </div>
-
-       <div class="flex gap-6 md:hidden">
-        <div class="searchAndcart flex gap-6  ">
-
-            <i class="fa-solid fa-magnifying-glass text-2xl text-darkGray"></i>
-            <i class="fa-solid fa-cart-shopping text-2xl text-darkGray"></i>
-    
-    
-           </div>
-    
-           <div class="toggleMenu  ">
-             
-             <span></span>
-             <span></span>
-             <span></span>
-    
-           </div>
-       </div>
-
-  
-
-      </div>
-
-      <div class="headerMobileNav  transition-all duration-500">
-
-        <ul class="text-center text-[1.5rem] text-darkGray font-semibold py-5">
-
-            <li><a class="block p-3" href="">Home</a></li>
-            <li><a class="block p-3" href="">Product</a></li>
-            <li><a class="block p-3" href="">Pricing</a></li>
-            <li><a class="block p-3" href="">Contact</a></li>
-              </ul>
-      </div>
+                    <li><a class="block p-3" href="">Home</a></li>
+                    <li><a class="block p-3" href="">Product</a></li>
+                    <li><a class="block p-3" href="">Pricing</a></li>
+                    <li><a class="block p-3" href="">Contact</a></li>
+                </ul>
+            </div>
 
 
-
-
-      
         </div>
-        </header>
+    </header>
 
 
-        <section class="banner   bg-darkGray bg-blend-multiply  bg-cover bg-no-repeat bg-[url('./img/hero-cover.jpg')] py-10 text-center">
+    <section
+        class="banner   bg-darkGray bg-blend-multiply  bg-cover bg-no-repeat bg-[url('./img/hero-cover.jpg')] py-10 text-center">
         <div class="container">
-      <div class="banner__wrapper lg:flex">
+            <div class="banner__wrapper lg:flex">
 
-        <div>
-            <h1 class="text-huge text-white font-semibold mb-6">Meet the Best Hospital</h1>
-            <p class="text-white mb-6 w-[70%] mx-auto">We know how large objects will act, but things on a small scale.</p>
-            <a class="bg-primary px-5 inline-block py-3 rounded-full text-white font-semibold mb-3" href="">Get a quote Now</a> <br>
-            <a class="bg-transparent border border-white px-5 inline-block py-3 rounded-full text-white font-semibold" href="">Learn More</a>
+                <div>
+                    <h1 class="text-huge text-white font-semibold mb-6">Meet the Best Hospital</h1>
+                    <p class="text-white mb-6 w-[70%] mx-auto">We know how large objects will act, but things on a small
+                        scale.</p>
+                    <a class="bg-primary px-5 inline-block py-3 rounded-full text-white font-semibold mb-3" href="">Get
+                        a quote Now</a> <br>
+                    <a class="bg-transparent border border-white px-5 inline-block py-3 rounded-full text-white font-semibold"
+                        href="">Learn More</a>
 
+                </div>
+
+                <div class="bannerform text-left bg-white p-10 rounded-lg w-[350px] mx-auto my-10">
+                    <h3 class="text-center">Book Appointment</h3>
+                    <form action="">
+                        <div class="inputGroup mb-3">
+                            <label for="">Name</label><br>
+                            <input class="p-3 w-full" type="text" placeholder="Fullname">
+                        </div>
+
+                        <div class="inputGroup mb-3">
+                            <label for="">Email</label><br>
+                            <input class="p-3 w-full" type="text" placeholder="example@gmail.com">
+                        </div>
+
+                        <div class="inputGroup mb-3">
+                            <label for="">Department</label><br>
+                            <input class="p-3 w-full" type="text" placeholder="Please Select">
+                        </div>
+
+                        <div class="inputGroup mb-3">
+                            <label for="">Time</label><br>
+                            <input class="p-3 w-full" type="text" placeholder="Please Select">
+                        </div>
+
+                        <a class="bg-primary px-5 inline-block py-3 rounded-full text-white font-semibold mb-3"
+                            href="">Book an appointment</a> <br>
+
+                    </form>
+                </div>
+
+            </div>
 
         </div>
 
-
-        <div class="bannerform text-left bg-white p-10 rounded-lg w-[350px] mx-auto my-10">
-            <h3 class="text-center">Book Appointment</h3>
-
-           <form action="">
-
-                <div class="inputGroup mb-3">
+    </section>
 
 
-                    <label  for="">Name</label><br>
-                    <input class="p-3 w-full" type="text" placeholder="Fullname">
+    <section>
+
+        <div class="container">
+            <div class="text-center p-10">
+                <h2 class="text-4xl font-bold">Leading Medicine</h2>
+                <p class="text-darkGray mt-5 text-sm">Problems trying to resolve the conflict <br>
+                    The two major realms of Classical physics: Newtonian mechanics</p>
+            </div>
+            <div class="medicinewrapper  md:grid grid-cols-3 gap-10 p-10 pb-10">
+                <div class="mediciencontent  border rounded-2xl h-[29rem] text-justify mb-7">
+
+                    <div>
+                        <div class="flex gap-5 bg-primary rounded-1xl py-7 mb-5 justify-center">
+                            <img src="img/icn-circle circle-md.png" alt="">
+                            <h2 class="mt-6 text-white">Emergency Case</h2>
+                        </div>
+                        <div class="ml-10 p-3 line">
+                            <p class="">-The best products start <br> with figma</p>
+                            <p>-Design with real data</p>
+                            <p>-Lighting fast prototyping</p>
+                            <p>-Fastest way to organize</p>
+                            <p>-Work at the speed of thought</p>
+
+                        </div>
+                        <a class="ml-20 text-primary" href="">Learn more</a>
+                    </div>
+
+
+
                 </div>
 
-                <div class="inputGroup mb-3">
+
+                <div class="mediciencontent  border rounded-2xl h-[29rem] text-justify mb-7">
+
+                    <div>
+                        <div class="flex gap-5 bg-primary rounded-1xl py-7 mb-5 justify-center">
+                            <img src="img/icn-circle circle-md.png" alt="">
+                            <h2 class="mt-6 text-white">Cancer Care</h2>
+                        </div>
+                        <div class="ml-10 p-3 line">
+                            <p class="">-The best products start <br> with figma</p>
+                            <p>-Design with real data</p>
+                            <p>-Lighting fast prototyping</p>
+                            <p>-Fastest way to organize</p>
+                            <p>-Work at the speed of thought</p>
+
+                        </div>
+                        <a class="ml-20 text-primary" href="">Learn more</a>
+                    </div>
 
 
-                    <label  for="">Email</label><br>
-                    <input class="p-3 w-full" type="text" placeholder="example@gmail.com">
                 </div>
 
-                <div class="inputGroup mb-3">
+                <div class="mediciencontent  border rounded-2xl h-[29rem] text-justify mb-7">
+
+                    <div>
+                        <div class="flex gap-5 bg-primary rounded-1xl py-7 mb-5 justify-center">
+                            <img src="img/icn-circle circle-md.png" alt="">
+                            <h2 class="mt-6 text-white">Health Quaries</h2>
+                        </div>
+                        <div class="ml-10 p-3 line">
+                            <p class="">-The best products start <br> with figma</p>
+                            <p>-Design with real data</p>
+                            <p>-Lighting fast prototyping</p>
+                            <p>-Fastest way to organize</p>
+                            <p>-Work at the speed of thought</p>
+
+                        </div>
+                        <a class="ml-20 text-primary" href="">Learn more</a>
+                    </div>
 
 
-                    <label  for="">Department</label><br>
-                    <input class="p-3 w-full" type="text" placeholder="Please Select">
                 </div>
 
-                <div class="inputGroup mb-3">
-
-
-                    <label  for="">Time</label><br>
-                    <input class="p-3 w-full" type="text" placeholder="Please Select">
-                </div>
-
-                <a class="bg-primary px-5 inline-block py-3 rounded-full text-white font-semibold mb-3" href="">Book an appointment</a> <br>
-
-           </form>
-
-        
+            </div>
         </div>
 
-      </div>
+    </section>
 
-      
-           
 
-           
+
+    <section>
+        <div class="container">
+            <div class="text-center p-10">
+                <h2 class="text-4xl font-bold">Leading Medicine</h2>
+                <p class="text-darkGray mt-5 text-sm">Problems trying to resolve the conflict <br>
+                    The two major realms of Classical physics: Newtonian mechanics</p>
+            </div>
+
+            <div class="doctorswrapper md:grid grid-cols-3 gap-5 text-justify items-center">
+
+
+                <div class=" bg-gray-100 mb-5  w-[20rem] h-[15rem]">
+                    <div class="ml-10">
+                        <i class="text-yellow-400 fa-solid fa-star"></i>
+                        <i class="text-yellow-400 fa-solid fa-star"></i>
+                        <i class="text-yellow-400 fa-solid fa-star"></i>
+                        <i class="text-yellow-400 fa-solid fa-star"></i>
+                        <i class="outline-yellow-600 fa-regular fa-star"></i>
+
+                        <p class="py-5">State helps you see how many <br>
+                            more days you need to work to <br> reach your financial goal</p>
+                        <img class="" src="img/dr.C.png" alt="">
+                    </div>
+                </div>
+
+
+                <div class="bg-gray-100 mb-5 w-[20rem] h-[15rem]">
+                    <div class="ml-10">
+                        <i class="text-yellow-400 fa-solid fa-star"></i>
+                        <i class="text-yellow-400 fa-solid fa-star"></i>
+                        <i class="text-yellow-400 fa-solid fa-star"></i>
+                        <i class="text-yellow-400 fa-solid fa-star"></i>
+                        <i class="outline-yellow-600 fa-regular fa-star"></i>
+
+
+                        <p class="py-5">State helps you see howas <br> more days you need to work to <br> reach your
+                            financial goal</p>
+                        <img src="img/dr.A.png" alt="">
+                    </div>
+                </div>
+
+
+                <div class="bg-gray-100 mb-5 w-[20rem] h-[15rem]">
+                    <div class="ml-10">
+                        <i class="text-yellow-400 fa-solid fa-star"></i>
+                        <i class="text-yellow-400 fa-solid fa-star"></i>
+                        <i class="text-yellow-400 fa-solid fa-star"></i>
+                        <i class="text-yellow-400 fa-solid fa-star"></i>
+                        <i class="outline-yellow-600 fa-regular fa-star"></i>
+
+
+                        <p class="py-5">State helps you see how many <br> more days you need to work to <br> reach your
+                            financial goal</p>
+                        <img src="img/dr.b.png" alt="">
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <section>
+      <div class="container">
+          <div class="text-center p-10">
+              <h2 class="text-4xl font-bold">FAQ</h2>
+              <p class="text-darkGray mt-5 text-sm">Problems trying to resolve the conflict <br>
+                  The two major realms of Classical physics: Newtonian mechanics</p>
+          </div>
+
+          <div class="faqwrapper md:grid grid-cols-3 gap-10 ">
+
+              <div class="faqcontent ">
+
+                      <div class="bg-gray-100">
+                      <i class="text-primary ml-10 mt-5 fa-solid fa-chevron-right"></i>
+                      <div class="ml-20 mb-5">
+                          <p class="font-bold">the quick fox jumps over <br> the lazy dog</p>
+                          <p>Things on a very small scale <br> behave like nothing</p>
+                      </div>
+                      </div>
+
+                  </div>
+
+                  <div class="faqcontent ">
+
+                      <div class="bg-gray-100">
+                      <i class="text-primary ml-10 mt-5 fa-solid fa-chevron-right"></i>
+                      <div class="ml-20 mb-5">
+                          <p class="font-bold">the quick fox jumps over <br> the lazy dog</p>
+                          <p>Things on a very small scale <br> behave like nothing</p>
+                      </div>
+                      </div>
+
+                  </div>
+                  <div class="faqcontent ">
+
+                      <div class="bg-gray-100">
+                      <i class="text-primary ml-10 mt-5 fa-solid fa-chevron-right"></i>
+                      <div class="ml-20 mb-5">
+                          <p class="font-bold">the quick fox jumps over <br> the lazy dog</p>
+                          <p>Things on a very small scale <br> behave like nothing</p>
+                      </div>
+                      </div>
+
+                  </div>
+                  <div class="faqcontent ">
+
+                      <div class="bg-gray-100">
+                      <i class="text-primary ml-10 mt-5 fa-solid fa-chevron-right"></i>
+                      <div class="ml-20 mb-5">
+                          <p class="font-bold">the quick fox jumps over <br> the lazy dog</p>
+                          <p>Things on a very small scale <br> behave like nothing</p>
+                      </div>
+                      </div>
+
+                  </div>
+                  <div class="faqcontent ">
+
+                      <div class="bg-gray-100">
+                      <i class="text-primary ml-10 mt-5 fa-solid fa-chevron-right"></i>
+                      <div class="ml-20 mb-5">
+                          <p class="font-bold">the quick fox jumps over <br> the lazy dog</p>
+                          <p>Things on a very small scale <br> behave like nothing</p>
+                      </div>
+                      </div>
+
+                  </div>
+                  <div class="faqcontent ">
+
+                      <div class="bg-gray-100">
+                      <i class="text-primary ml-10 mt-5 fa-solid fa-chevron-right"></i>
+                      <div class="ml-20 mb-5">
+                          <p class="font-bold">the quick fox jumps over <br> the lazy dog</p>
+                          <p>Things on a very small scale <br> behave like nothing</p>
+                      </div>
+                      </div>
+
+                  </div>
+                  <div class="faqcontent ">
+
+                      <div class="bg-gray-100">
+                      <i class="text-primary ml-10 mt-5 fa-solid fa-chevron-right"></i>
+                      <div class="ml-20 mb-3">
+                          <p class="font-bold">the quick fox jumps over <br> the lazy dog</p>
+                          <p>Things on a very small scale <br> behave like nothing</p>
+                      </div>
+                      </div>
+
+                  </div>
+                  <div class="faqcontent ">
+
+                      <div class="bg-gray-100">
+                      <i class="text-primary ml-10 mt-5 fa-solid fa-chevron-right"></i>
+                      <div class="ml-20 mb-3">
+                          <p class="font-bold">the quick fox jumps over <br> the lazy dog</p>
+                          <p>Things on a very small scale <br> behave like nothing</p>
+                      </div>
+                      </div>
+
+                  </div>
+                  <div class="faqcontent ">
+
+                      <div class="bg-gray-100">
+                      <i class="text-primary ml-10 mt-5 fa-solid fa-chevron-right"></i>
+                      <div class="ml-20 mb-3">
+                          <p class="font-bold">the quick fox jumps over <br> the lazy dog</p>
+                          <p>Things on a very small scale <br> behave like nothing</p>
+                      </div>
+                      </div>
+
+                  </div>
+            
                 
-        </div>
 
 
 
-        </section>
-
-       
-        <script>
-       const toggleMenu = document.querySelector('.toggleMenu');
-       const headerMobileNav = document.querySelector('.headerMobileNav');
+          </div>
 
 
-       toggleMenu.addEventListener('click',()=>{
+
+      </div>
+  </section>
+
+
+
+
+  <section class="pricing py-28">
+
+  <div class="container">
+
+    <div class="pricing__wrappper md:grid grid-cols-3  ">
+
+
+   
+<div class="pricecontent  border rounded-2xl h-[43rem] w-[25rem] ml-24 text-center  mb-32">
+
+                    <div>
+                        <div class=" gap-5   py-7 mb-5 justify-center">
+                          <h1 class="mb-4 font-bold text-4xl">Free</h1> 
+                           <p class="text-gray-600 font-bold">Organize across all<br> 
+                            apps by hand</p>
+                        </div>
+                        <div class="flex ml-32 gap-3 mb-10">
+
+                          <span class="text-huge text-primary "> 0</span>
+                          <div class="mt-1">
+                             <span class="text-sm text-primary mb-16">$</span>
+                             <p class="text-primary">Per Month</p>
+
+                          </div>
+                        </div>
+
+                        <div class="ml-16 break-words">
+                         <ul >
+                          <li class="flex gap-3 mb-5">
+                            <i class="fa-sharp fa-solid fa-circle-check text-3xl text-green-600"></i>
+                            <p class="font-semibold">Unlimited product updates</p>
+
+                          </li>
+                          <li class="flex gap-3 mb-5">
+                            <i class="fa-sharp fa-solid fa-circle-check text-3xl text-green-600"></i>
+                            <p class="font-semibold">Unlimited product updates</p>
+
+                          </li>
+                          <li class="flex gap-3 mb-5">
+                            <i class="fa-sharp fa-solid fa-circle-check text-3xl text-green-600"></i>
+                            <p class="font-semibold">Unlimited product updates</p>
+
+                          </li>
+                          <li class="flex gap-3 mb-5">
+                            <i class="fa-sharp fa-solid fa-circle-check text-3xl text-gray-400"></i>
+                            <p class="font-semibold">1gb cloud storage</p>
+
+                          </li>
+                          <li class="flex gap-3 mb-5">
+                            <i class="fa-sharp fa-solid fa-circle-check text-3xl text-gray-400"></i>
+                            <p class="font-semibold mb-12">Email and community <br>
+                              support
+                              </p>
+                            
+                              
+                          </li>
+
+                          
+                         </ul>
+
+                         <div>
+                          <a class="bg-primary p-3 rounded-md text-white font-semibold -ml-14" href="">Get a Quote now</a>
+                         </div>
+                        </div>
+                       
+                    </div>
+                   
+
+
+                </div>
+
+
+
+
+                <div class="pricecontent2  border rounded-2xl h-[47rem] w-[23rem] text-center mb-16 bg-darkblue text-white -mt-14 ml-24">
+
+                  <div>
+                      <div class=" gap-5   py-7 mb-5 justify-center">
+                        <h1 class="mb-4 font-bold text-4xl ">Free</h1> 
+                         <p class="text-white-600 font-bold">Organize across all<br> 
+                          apps by hand</p>
+                      </div>
+                      <div class="flex ml-20 gap-3 mb-10">
+
+                        <span class="text-huge text-primary "> 9.99</span>
+                        <div class="mt-1">
+                           <span class="text-sm text-primary mb-16">$</span>
+                           <p class="text-primary">Per Month</p>
+
+                        </div>
+                      </div>
+
+                      <div class="ml-16 break-words">
+                       <ul >
+                        <li class="flex gap-3 mb-5">
+                          <i class="fa-sharp fa-solid fa-circle-check text-3xl text-green-600"></i>
+                          <p class="font-semibold">Unlimited product updates</p>
+
+                        </li>
+                        <li class="flex gap-3 mb-5">
+                          <i class="fa-sharp fa-solid fa-circle-check text-3xl text-green-600"></i>
+                          <p class="font-semibold">Unlimited product updates</p>
+
+                        </li>
+                        <li class="flex gap-3 mb-5">
+                          <i class="fa-sharp fa-solid fa-circle-check text-3xl text-green-600"></i>
+                          <p class="font-semibold">Unlimited product updates</p>
+
+                        </li>
+                        <li class="flex gap-3 mb-5">
+                          <i class="fa-sharp fa-solid fa-circle-check text-3xl text-gray-400"></i>
+                          <p class="font-semibold">1gb cloud storage</p>
+
+                        </li>
+                        <li class="flex gap-3 mb-5">
+                          <i class="fa-sharp fa-solid fa-circle-check text-3xl text-gray-400"></i>
+                          <p class="font-semibold mb-12">Email and community <br>
+                            support
+                            </p>
+                          
+                            
+                        </li>
+
+                        
+                       </ul>
+
+                       <div>
+                        <a class="bg-primary p-3 rounded-md text-white font-semibold -ml-14" href="">Get a Quote now</a>
+                       </div>
+                      </div>
+                     
+                  </div>
+                 
+
+
+              </div>
+
+
+
+              <div class="pricecontent3  border rounded-2xl h-[43rem] w-[25rem]  mb-7  ml-16   text-center ">
+
+                <div>
+                    <div class=" gap-5   py-7 mb-5 justify-center">
+                      <h1 class="mb-4 font-bold text-4xl">Free</h1> 
+                       <p class="text-gray-600 font-bold">Organize across all<br> 
+                        apps by hand</p>
+                    </div>
+                    <div class="flex ml-20 gap-3 mb-10">
+
+                      <span class="text-huge text-primary "> 19.99</span>
+                      <div class="mt-1">
+                         <span class="text-sm text-primary mb-16">$</span>
+                         <p class="text-primary">Per Month</p>
+
+                      </div>
+                    </div>
+
+                    <div class="ml-16 break-words">
+                     <ul >
+                      <li class="flex gap-3 mb-5">
+                        <i class="fa-sharp fa-solid fa-circle-check text-3xl text-green-600"></i>
+                        <p class="font-semibold">Unlimited product updates</p>
+
+                      </li>
+                      <li class="flex gap-3 mb-5">
+                        <i class="fa-sharp fa-solid fa-circle-check text-3xl text-green-600"></i>
+                        <p class="font-semibold">Unlimited product updates</p>
+
+                      </li>
+                      <li class="flex gap-3 mb-5">
+                        <i class="fa-sharp fa-solid fa-circle-check text-3xl text-green-600"></i>
+                        <p class="font-semibold">Unlimited product updates</p>
+
+                      </li>
+                      <li class="flex gap-3 mb-5">
+                        <i class="fa-sharp fa-solid fa-circle-check text-3xl text-gray-400"></i>
+                        <p class="font-semibold">1gb cloud storage</p>
+
+                      </li>
+                      <li class="flex gap-3 mb-5">
+                        <i class="fa-sharp fa-solid fa-circle-check text-3xl text-gray-400"></i>
+                        <p class="font-semibold mb-12">Email and community <br>
+                          support
+                          </p>
+                        
+                          
+                      </li>
+
+                      
+                     </ul>
+
+                     <div>
+                      <a class="bg-primary p-3 rounded-md text-white font-semibold -ml-14" href="">Get a Quote now</a>
+                     </div>
+                    </div>
+                   
+                </div>
+               
+
+
+            </div>
           
-             headerMobileNav.classList.toggle('active');
 
-       })
 
-        </script>
 
-      
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+  </section>
+
+
+
+
+  <section class="bg-[#252B42]">
+    <div class="container">
+      <div class="md:flex items-center">
+        <div class="pt-20 pb-20">
+          <h2 class="text-huge font-bold text-white">
+            Get In Touch
+          </h2>
+          <p class="text-white md:w-[60%]">
+            The gradual accumulation of information about atomic and 
+            small-scale behaviour during the first quarter of the 20th 
+          </p>
+        </div>
   
+        <form>   
+          <div class="relative">
+              <div class="absolute inset-y-0 left-0 md:flex md:items-center pl-3 pointer-events-none">
+              </div>
+              <input type="search" id="search" class="block w-[25rem] p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your Email" required>
+              <button type="submit" class="text-white absolute right-0 bottom-0 bg-[#23A6F0] font-medium rounded-lg text-sm px-4 pt-[18px] pb-4">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+  <section class="footer pt-20 pb-20">
+  
+    <div class="container">
+    
+      <div class="footerWrapper">
+    
+        <div class="footerContent md:grid grid-cols-4 gap-4 md:mx-auto my-10">
+            <div >
+                <h3 class="font-bold mb-5">Get In Touch</h3>
+                <p class="font-semibold text-gray-400 w-[90%] text-sm">the quick fox jumps over the lazy dog</p>
+  
+                <a href=""  class="fa-brands fa-facebook pr-2 fa-xl pt-10 text-[#23A6F0]"></a>                           
+                <a href=""  class="fa-brands fa-instagram pr-2 fa-xl text-[#23A6F0]"></a>
+                <a href=""  class="fa-brands fa-twitter pr-2 fa-xl text-[#23A6F0]"></a>
+                               
+              </div>
+    
+              <div>
+                <h3 class="font-bold mb-3">Company info</h3>
+                <p class="font-semibold text-gray-400 w-[90%] leading-9 text-sm">About us </p>
+                <p class="font-semibold text-gray-400 w-[90%] leading-9 text-sm">Carrie </p>
+                <p class="font-semibold text-gray-400 w-[90%] leading-9 text-sm">We are hiring</p>
+                <p class="font-semibold text-gray-400 w-[90%] leading-9 text-sm">Blog</p>
+              </div>
+    
+              <div>
+                <h3 class="font-bold mb-3">Features</h3>
+                <p class="font-semibold text-gray-400 w-[90%] leading-9 text-sm">Business Marketing</p>
+                <p class="font-semibold text-gray-400 w-[90%] leading-9 text-sm">User Analytic</p>
+                <p class="font-semibold text-gray-400 w-[90%] leading-9 text-sm">Live Chat</p>
+                <p class="font-semibold text-gray-400 w-[90%] leading-9 text-sm">Unlimited Support</p>
+              </div>
+    
+              <div>
+                <h3 class="font-bold mb-3">Resources</h3>
+                <p class="font-semibold text-gray-400 w-[90%] leading-9 text-sm">IOS & Android</p>
+                <p class="font-semibold text-gray-400 w-[90%] leading-9 text-sm">Watch a Demo</p>
+                <p class="font-semibold text-gray-400 w-[90%] leading-9 text-sm">Customers</p>
+                <p class="font-semibold text-gray-400 w-[90%] leading-9 text-sm">API</p>
+              </div>
+  
+        </div>
+  
+      </div>
+    
+    </div>
+    
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const toggleMenu = document.querySelector('.toggleMenu');
+        const headerMobileNav = document.querySelector('.headerMobileNav');
+
+        toggleMenu.addEventListener('click', () => {
+            headerMobileNav.classList.toggle('active');
+
+        })
+
+    </script>
+
+
+
 </body>
+
 </html>

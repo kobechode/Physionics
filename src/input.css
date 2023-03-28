@@ -43,3 +43,8 @@
     max-height: 0;
     overflow: hidden;
  }
+
+
+ .border{
+   border-color: #23a6f0;
+ }
