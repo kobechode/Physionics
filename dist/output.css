@@ -1047,26 +1047,8 @@ body {
   color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
-.text-yellow-200 {
-  --tw-text-opacity: 1;
-  color: rgb(254 240 138 / var(--tw-text-opacity));
-}
-
-.text-yellow-600 {
-  --tw-text-opacity: 1;
-  color: rgb(202 138 4 / var(--tw-text-opacity));
-}
-
 .bg-blend-multiply {
   background-blend-mode: multiply;
-}
-
-.outline-yellow-400 {
-  outline-color: #facc15;
-}
-
-.outline-yellow-600 {
-  outline-color: #ca8a04;
 }
 
 .transition-all {
